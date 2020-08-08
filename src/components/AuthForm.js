@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Text, Button, Input } from 'react-native-elements';
 import { StyleSheet } from 'react-native';
 import Spacer from './Spacer';
+import { SafeAreaView } from 'react-navigation';
 
 
 const AuthForm = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
@@ -9,7 +10,7 @@ const AuthForm = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
     const [password, setPassword] = useState('');
 
     return (
-        <>
+        <SafeAreaView forceInset={{top:'always'}}>
             <Spacer>
                 <Text h3>{headerText}</Text>
             </Spacer>
@@ -33,7 +34,7 @@ const AuthForm = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
             <Spacer>
                 <Button title={submitButtonText} onPress={() => onSubmit({ email, password })} />
             </Spacer>
-        </>
+        </SafeAreaView>
     );
 
 };

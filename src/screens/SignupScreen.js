@@ -38,9 +38,6 @@ const styles = StyleSheet.create({
         marginBottom: 250
 
     }
-
-
-
 });
 
 export default SignupScreen; 
