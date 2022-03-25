@@ -17,7 +17,7 @@
     "kind-of": "^6.0.3",
     "logkitty": "^0.7.1",
     "mem": "^6.0.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
